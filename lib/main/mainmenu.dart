@@ -8,16 +8,20 @@ class MainMenu extends StatefulWidget {
 }
 
 class _MainMenuState extends State<MainMenu> {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-        child: Row(
-      children: [
-        Expanded(
-            child: Column(
-          children: [Text("Text 1"), Text("Text 2"), Text("Text 3")],
-        ))
-      ],
-    ));
-  }
+    @override
+    Widget build(BuildContext context) {
+        return Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+                Column(
+                    children: [
+                        Text("Text 1"), 
+                        Text("Text 2"), 
+                        Text("Text 3")
+                        ],
+                    )
+                ],
+            );
+    }
 }

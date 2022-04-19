@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:seller/login/login.dart';
 import 'package:seller/main/mainmenu.dart';
 
 void main() {
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Seller Application',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
             title: const Text("Seller"),
           ),
           body: Center(
-            child: MainMenu(),
+            child: Login(),
           )),
     );
   }
